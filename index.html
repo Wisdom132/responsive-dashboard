@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="fonts/css/all.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="jquery.mobile-1.4.5/jquery.mobile-1.4.5.css">
+    <script src="ckeditor/ckeditor.js"></script>
+    <script src="jquery.mobile-1.4.5/jqueryMobile.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body id="body">
+
+
+     <nav class="navbar navbar-expand-lg navbar-light bg-dark navbar-vertical sticky-top">
+         <div class="container">
+                <button class="btn btn-danger" id="toggle">Toggle</button>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                          <ul class="navbar-nav">
+                            <li class="nav-item active">
+                              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Features</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Pricing</a>
+                            </li>
+                          </ul>
+                        </div>
+                    </div>
+        </nav>
+                      <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-2 sidebar align-items-center">
+                              <div class="nav flex-column nav-pills text-left" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                <a class="nav-link active mt-2 mb-2"  id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true"> <i class="fas fa-book"></i> My Diary</a>
+                                <a class="nav-link mt-2 mb-2" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i class="fas fa-book"></i>My Todo</a>
+                                <a class="nav-link mt-2 mb-2" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false"><i class="fas fa-book"></i>My Notes</a>
+                                <a class="nav-link mt-2 mb-2"  id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false"><i class="fas fa-book"></i>My Calendar</a>
+                                <!-- added -->
+                                <a class="nav-link mt-2 mb-2"  id="v-pills-gallary-tab" data-toggle="pill" href="#v-pills-gallary" role="tab" aria-controls="v-pills-gallry" aria-selected="false"><i class="fas fa-book"></i>My Galary</a>
+                                <a class="nav-link mt-2 mb-2"  id="v-pills-user-tab" data-toggle="pill" href="#v-pills-user" role="tab" aria-controls="v-pills-user" aria-selected="false"><i class="fas fa-book"></i>My Profile</a>
+                                <!-- added -->
+                              </div>
+                            </div>
+                            <div class="col-10 content-body position-relative">
+                              <div class="tab-content" id="v-pills-tabContent position-relative" >
+                                  
+                                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                    <nav aria-label="breadcrumb" role="navigation">
+                                        <ol class="breadcrumb bg-light">
+                                          <li class="breadcrumb-item active"><a href="#">My Diary</a></li>
+                                        </ol>
+                                      </nav>
+                                     <h3>My Diary</h3>
+                                    <div class="row mx-auto">
+                                      <div class="col-md-12 mb-5">
+                                        <textarea name="editor1"></textarea>
+                                        <button class="btn float-right mt-4" type="submit">Save</button>
+                                      </div>
+                                        
+                                    </div>
+                                   
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                    <nav aria-label="breadcrumb" role="navigation">
+                                        <ol class="breadcrumb bg-light">
+                                          <li class="breadcrumb-item"><a href="#">My Diary</a></li>
+                                          <li class="breadcrumb-item active">My To-do</li>
+                                        </ol>
+                                      </nav>
+                                  <p>kjniejri Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed quo distinctio eligendi 
+                                    harum fugiat recusandae sint est maxime doloribus, tenetur alias aspernatur voluptatibus, consequuntur animi! 
+                                    Ducimus qui magnam voluptatem ullam excepturi corrupti nemo aperiam doloremque doloribus maxime vel asperiores rerum quae,
+                                         veritatis voluptatibus quo. Aliquid, dignissimos nesciunt eos reprehenderit aspernatur nam, cum suscipit debitis explicabo doloribus voluptatibus minima quos ipsam distinctio nisi, 
+                                         alias molestias harum natus numquam? Velit voluptates sunt, fuga alias exercitationem doloribus commodi reprehenderit ratione optio sequi magni nemo natus.</p></div>
+                                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                                    <nav aria-label="breadcrumb" role="navigation">
+                                        <ol class="breadcrumb bg-light">
+                                          <li class="breadcrumb-item"><a href="#">My Diary</a></li>
+                                          <li class="breadcrumb-item"><a href="#">My To-do</a></li>
+                                          <li class="breadcrumb-item active" aria-current="page">My Notes</li>
+                                        </ol>
+                                      </nav>
+                                     <div>
+                                       <div class="row">
+                                         <div class="col-md-6">
+                                           <div id="page_addNote" data="role-page">
+                                             <div data-role="header">
+                                               <h4>Add a Note</h4>
+                                             </div>
+                                             <div class="ui-content">
+                                               <input type="text" id="tf_title"><br>
+                                               <textarea  id="tf_content"></textarea>
+                                               <a id="btn_addnote" href="#page_notes" data-role="button">Add Note</a>
+                                             </div>
+                                           </div>
+                                         </div>
+                                         <div class="col-md-6"></div>
+                                       </div>
+                                     </div>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                    <nav aria-label="breadcrumb" role="navigation">
+                                        <ol class="breadcrumb bg-light">
+                                          <li class="breadcrumb-item"><a href="#">My Diary</a></li>
+                                          <li class="breadcrumb-item"><a href="#">My To-do</a></li>
+                                          <li class="breadcrumb-item"><a href="#">My Notes</a></li>
+                                          <li class="breadcrumb-item active">My Calendar</li>
+                                        </ol>
+                                      </nav>
+                                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet soluta tenetur voluptate fuga dolores commodi unde consectetur
+                                         cupiditate, consequatur autem repellendus dignissimos nam
+                                         corrupti laborum ea ex ad quibusdam facilis dicta animi accusantium explicabo dolorem pariatur eaque? Sequi quis nam ipsam libero, 
+                                         beatae recusandae corrupti praesentium quae qui, amet commodi.</p>
+                                </div>
+                                <!-- added -->
+                                <div class="tab-pane fade" id="v-pills-gallary" role="tabpanel" aria-labelledby="v-pills-gallary-tab">...</div>
+                                <div class="tab-pane fade" id="v-pills-user" role="tabpanel" aria-labelledby="v-pills-user-tab">...</div>
+                                <!-- added -->
+                              </div>
+                            </div>
+                          </div>    
+                      </div>
+                                      
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function(){
+          $('#toggle').click(function(){
+              $('.sidebar').slideToggle('fast');
+
+          })
+      });
+      
+       CKEDITOR.replace( 'editor1',{
+        uiColor: '#0689ad',
+        height:'400px',
+       } );
+                
+    </script>
+</body>
+</html>
